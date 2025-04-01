@@ -1,0 +1,19 @@
+CREATE DATABASE ESTUDO;
+
+CREATE TABLE CADASTRO( PRIMARY KEY id_Identidade int(varchar)[not null],
+Nome_char(50) [not null],
+Idade_int(2) [not null],
+);
+
+INSERT INTO CADASTRO[(id_Identidade,Nome,Idade)
+VALUES('','','');
+
+ALTER TABLE CADASTRO ADD/DROP(
+id_Identidade_varchar()[not null]
+Nome_char(50) [not null]
+Idade_int(2) [not null]
+);
+
+SELECT DISTINCT Nome, FROM CADASTRO WHERE ESTUDO ORDER BY asc;
+
+
