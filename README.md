@@ -1,2 +1,3 @@
-# Campanha_Concursado2025
-Sistema de página web para concursado
+# Campanha
+Sistema de página web para escolha ou contratação de concursado, informações pessoais e outros. pode ser usado pa
+ra outras finalidades no mesmo modelo, ex; eleições, estatísticas, divulgação etc...
