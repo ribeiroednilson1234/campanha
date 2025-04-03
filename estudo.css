@@ -58,9 +58,9 @@ border:1px;
 padding:5%;
 background-color:#000000;
 }
-form>fildset>legend+label{align:center; border:1px; bgcolor:#0000ff; fontcolor:#000000;
+form>label{align:center; border:1px; bgcolor:#0000ff; fontcolor:#000000;
 }
-form>fieldset>legend+input{align:center; border:1px; bgcolor:#0000ff; fontcolor:#000000;
+form>input{align:center; border:1px; bgcolor:#0000ff; fontcolor:#000000;
 }
 aside:div.nova{
 background-color:#FFFFFF;
