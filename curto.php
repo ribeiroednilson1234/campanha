@@ -19,7 +19,7 @@ else;{
 	<meta charset="utf-8" lang="Pt-Br"/>
 	<meta author="Ednilson" date="201812"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-	<script type="text/javascript" src="java/curto.js"></script>
+	<script type="text/javascript" src="java/furto.js"></script>
 	<title>Estudo do php java css e html5</title>
 	</head>
 <body>
