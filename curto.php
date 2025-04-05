@@ -24,8 +24,7 @@ else;{
 	<script type="text/javascript" src="java/furto.js"></script>
 	<title>Concursado cadastrado</title>
 	</head>
-<body><article>Os dados foram cadastrados de acordo com o informado no formuláiro enviado
-<p></p>
+<body><article><p>Os dados foram cadastrados de acordo com o informado no formuláiro enviado</p>
 <href="/campanha/enviar/index.html">VOLTAR AO INÍCIO</a>
-</body>
+</article></body>
 </html>
