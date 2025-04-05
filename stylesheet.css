@@ -6,6 +6,10 @@ margin:1%;
 border:1%;
 padding:auto;
 }
+menu{
+background:#DDDD00;
+border:1px;
+}
 menu.topnav{
   overflow: hidden;
   background-color: #900000;
