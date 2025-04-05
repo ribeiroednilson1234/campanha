@@ -1,8 +1,8 @@
 <?
-estudo(nome,idade);
+estudo(nome,idade,CPF);
 $N=$_post["nome"];
 $I=$_post["idade"];
-$C=$_post[CPF];
+$C=$_post["CPF"];
 $wy=$_post["Erro"];
 	if
 		N=string;
