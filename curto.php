@@ -2,16 +2,18 @@
 estudo(nome,idade);
 $N=$_post["nome"];
 $I=$_post["idade"];
+$C=$_post[CPF];
 $wy=$_post["Erro"];
 	if
 		N=string;
 			echo "<p><b>Nome cadastrado: [$N];</b></p>"}
 	if{	I=int; 
 			echo "<br><p><b>Idade cadastrada: [$I];</b></p>"}
-
+	if{	C=int;
+			echo "<br><p><b>CPF cadastrado: [$C];</b></p>"}			
 else;{
 	Erro=boolean};
-	echo"$wy, <b>Dados não cadastrados.</b>";
+	echo"$wy, <b>Dados não cadastrados erro procure o administrador do sistema.</b>";
 ?>
 <!DOCTYPE html>
 <html>
