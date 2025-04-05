@@ -10,7 +10,7 @@ $wy=$_post["Erro"];
 	if{	I=int; 
 			echo "<br><p><b>Idade cadastrada: [$I];</b></p>"}
 	if{	C=int;
-			echo "<br><p><b>CPF cadastrado: [$C];</b></p>"}			
+			echo "<br><p><b>CPF cadastrado: [$C];</b></p>"}
 else;{
 	Erro=boolean};
 	echo"$wy, <b>Dados não cadastrados erro procure o administrador do sistema.</b>";
@@ -22,9 +22,9 @@ else;{
 	<meta author="Ednilson" date="201812"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 	<script type="text/javascript" src="java/furto.js"></script>
-	<title>Estudo do php java css e html5</title>
+	<title>Concursado cadastrado</title>
 	</head>
-<body>
+<body><article>Os dados foram cadastrados de acordo com o informado no formuláiro enviado
 <p></p>
 <href="/campanha/enviar/index.html">VOLTAR AO INÍCIO</a>
 </body>
