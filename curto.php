@@ -4,7 +4,7 @@
 @mssql_select_db(“$db“) or die
 (“Não foi possível selecionar o banco de dados!”);
 
-$instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF FROM $CONTRATADO ORDER BY ASC;
+$instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF, FROM $CONTRATADO ORDER BY ASC;
 $consulta = mssql_query($instrucaoSQL);
 $numRegistros = mssql_num_rows($consulta);
 
