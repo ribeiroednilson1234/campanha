@@ -1,9 +1,36 @@
-﻿<?
-estudo(Nome,Idade,Identidade,CPF);
+<?php
+@mssql_connect($dbhost,$user,$password) or die
+(“Não foi possível a conexão com o servidor!”);
+@mssql_select_db(“$db“) or die
+(“Não foi possível selecionar o banco de dados!”);
+
+$instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF FROM $CONTRATADO ORDER BY ASC;
+$consulta = mssql_query($instrucaoSQL);
+$numRegistros = mssql_num_rows($consulta);
+
+echo “Esta tabela contém $numRegistros registros!\n<hr>\n“;
+
+if ($numRegistros!=0) {
+
+while ($cadaLinha = mssql_fetch_array($consulta)) {
+
+echo “$cadaLinha[$Nome] – $cadaLinha[$Idade] - $cadaLinha[$Identidade] - $cadaLinha[$CPF]\n<br>\n“;
+};
+
+try
+{
+
+function [estudo] ([Nome],[Idade],[Identidade],[CPF]);{
+
 $Nome=$_post["Nome"];
-$Idade=$_post["Idade"];$Identidade=$_Post["Identidade"];
+
+$Idade=$_post["Idade"];
+$Identidade=$_Post["Identidade"];
+
 $CPF=$_post["CPF"];
+
 $wy=$_post["Erro"];
+
 
 if
 {	Nome=string;
@@ -15,11 +42,19 @@ if{	Identidade; 	echo "<br><p><b>Identidade Cadastrada: [$Identidade]"</b></p>}
 if{	CPF=int;
 	echo "<br><p><b>CPF cadastrado: [$CPF];</b></p>"}
 
+
 else;{
 	Erro=boolean};
 	echo"$wy, <br><b>Dados não cadastrados erro procure o administrador do sistema.</b>";
-?>
 
+
+elseif;
+        $sql = "INSERT INTO CONTRATADO (Nome, Idade, Identidade, CPF) VALUES ('$nome', '$Idade','$Identidade','$CPF')";
+return[estudo];
+}
+}	
+$conn=null; 
+?>
 <!DOCTYPE html>
 <html>
 
