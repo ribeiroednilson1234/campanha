@@ -187,16 +187,28 @@
       identification within third-party archives.
   
        Copyright [2025] [name of copyright Ednilson Alves]
-CI [      
+.ci [ name ]{    
 #!bin/bash
+name: ci
+
 on:
+  push:
+    branches: main
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+push:
+    branches: main
     ##Acesse o GitHub
-login:
-with:
-name: ls>username: ${{ secrets.ribeiroednilson1234 }}
-password: ls>password: ${{ secrets.GitHub2@2025 }}
-env:
-region: brazil
+  login:
+  runs-on: GitHub
+  with:
+    name: ls>username: ${{ secrets.ribeiroednilson1234 }}
+    password: ls>password: ${{ secrets.GitHub2@2025 }}
+  env:
+    region: brazil}
 ]
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
