@@ -17,6 +17,54 @@ jobs:
           username: _json_key
           password: ${{ secrets.GCR_JSON_KEY }}
 
+name: Open new issue
+on: workflow_dispatch
+
+jobs:
+  open-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - run: |
+          gh issue --repo ${{ github.repository }} \
+            create --title "Issue title" --body "Issue body"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+on: [ push ]
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create issue using REST API
+        run: |
+          curl --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/issues \
+          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          --header 'content-type: application/json' \
+          --data '{
+            "title": "Automated issue for commit: ${{ github.sha }}",
+            "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
+            }' \
+          --fail
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>   
 
 ## Docker hub
 name: ci
@@ -35,6 +83,20 @@ jobs:
         with:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
 
 
 ## AZURE Container Registry (ACR)
@@ -56,6 +118,19 @@ jobs:
           username: ${{ vars.AZURE_CLIENT_ID }}
           password: ${{ secrets.AZURE_CLIENT_SECRET }}
 
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
 
 ## Google Cloud Authenticate to Google Cloud
 name: ci
@@ -110,6 +185,19 @@ jobs:
         username: oauth2accesstoken
         password: ${{ steps.auth.outputs.access_token }}
 
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
 
 ## ORACLE OCI Oracle Cloud Infrastructure Registry (OCIR)
 name: ci
@@ -132,6 +220,21 @@ jobs:
 env:
           oracle-region: Brazil
 
+          <?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
+
+
 ##AWS Public Elastic Container Registry (ECR)
 name: ci
 
@@ -152,6 +255,20 @@ jobs:
           password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         env:
           AWS_REGION: Brazil
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
 
 ###//antes de tudo fiz a ate a linda 161 do Código.
 
@@ -235,6 +352,21 @@ jobs:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_CAMPANHA}}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
+
       
 #
 
@@ -290,6 +422,21 @@ jobs:
           echo VERSION=$VERSION-1.0
           docker tag $IMAGE_CAMPANHA $IMAGE_ID:$VERSION-1.0
           docker push $IMAGE_ID:$VERSION-1.0
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
+
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
@@ -355,3 +502,17 @@ jobs:
           subject-name: ghcr.io/${{ github.repository }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
+          
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/ribeiroednilson1234/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="ribeiroednilson1234" />
+            <add key="ClearTextPassword" value="GiHub2@2025" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
