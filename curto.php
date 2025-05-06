@@ -46,20 +46,16 @@ $conn=null;
 ?>
 <!DOCTYPE html>
 <html>
-
-	<head>
-	<meta charset="utf-8" lang="Pt-Br"/>
-
-	<meta author="Ednilson" date="201812"/>
-
-	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-
-	<script type="text/javascript" src="Campanha/java/furto.js"></script>
-
-	<title>Concursado cadastrado</title>
-
-	</head>
-<body><article><p>Os dados foram cadastrados de acordo com o informado no formuláiro enviado</p>
+<head>
+<meta charset="utf-8" lang="Pt-Br"/>
+<meta author="Ednilson" date="201812"/>
+<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+<script type="text/javascript" src="Campanha/java/furto.js"></script>
+<title>Concursado cadastrado</title>
+</head>
+<body>
+<article>
+<p>Os dados foram cadastrados de acordo com o informado no formuláiro enviado</p>
 <href="/campanha/enviar/index.html">VOLTAR AO INÍCIO</a>
 </article>
 </body>
