@@ -7,6 +7,6 @@ Hierarquia de diretórios;
 Recomendo colocar as imagens no mesmo nível de concursado.html
 
 Sub diretório #Campanha/enviar> form.html, index.html.
-Sub-diretorios #Campanha/enviar/DB>*, #Campanha/enviar/estilos>*, #Campanha/enviar/java>*, #Campanha/enviar/php>*
+Sub-diretorios #Campanha/enviar/DB>*, #Campanha/enviar/estilos>*, #Campanha/enviar/java>*, #Campanha/enviar/php>*,  #Campanha/enviar/TipeScript>*
 Recomendo colocar as imagens no mesmo nível de #enviar/form.html
 Estrutura de desenvlvimento .Net
