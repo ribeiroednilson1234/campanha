@@ -7,7 +7,7 @@ Hierarquia de diretórios;
 Recomendo colocar as imagens ilustrativas no mesmo nível de concursado.html; é que, a escolha e disponibilização para o contrato firmado deve ocorrer em diretório "/enviar/form.html".
 
 Sub diretório #Campanha/enviar> form.html, index.html.
-Sub-diretorios #Campanha/enviar/DB>*, #Campanha/enviar/estilos>*, #Campanha/enviar/java>*, #Campanha/enviar/php>*,  #Campanha/enviar/TypeScript>*
-Recomendo colocar as imagens no mesmo nível de #enviar/form.html
+Sub-diretorios #Campanha/enviar/DB>*.bd, #Campanha/enviar/estilos>*.css, #Campanha/enviar/java>*.js, #Campanha/enviar/php>*.php,  #Campanha/enviar/TypeScript>*.ts
+Recomendo colocar as imagens para o concursado a ser contratado no mesmo nível de #enviar/form.html
 Nota ! As imagens são proprietárias e no campo de texto "CONCURSADO XXX" deve exibir os dados do concursado para o envido do formulário.
 Estrutura de desenvlvimento .Net
