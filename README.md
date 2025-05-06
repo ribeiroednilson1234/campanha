@@ -4,7 +4,7 @@ Pode ser usado para outras finalidades no mesmo modelo, ex; eleições, estatís
 
 Hierarquia de diretórios; 
 #Campanha> concursado.html, stylesheet, funding, license, redme.md
-Recomendo colocar as imagens no mesmo nível de concursado.html
+Recomendo colocar as imagens ilustrativas no mesmo nível de concursado.html; é que, a escolha e disponibilização para o contrato firmado deve ocorrer em diretório "/enviar/form.html".
 
 Sub diretório #Campanha/enviar> form.html, index.html.
 Sub-diretorios #Campanha/enviar/DB>*, #Campanha/enviar/estilos>*, #Campanha/enviar/java>*, #Campanha/enviar/php>*,  #Campanha/enviar/TipeScript>*
