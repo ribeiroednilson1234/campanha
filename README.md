@@ -2,11 +2,12 @@
 Sistema de página web para escolha ou contratação de concursado, informações pessoais e outros. 
 Pode ser usado para outras finalidades no mesmo modelo, ex; eleições, estatísticas, divulgação etc...
 
-Hierarquia de diretórios;
+Hierarquia de diretórios; 
 #Campanha> concursado.html, stylesheet, funding, license, redme.md
 Recomendo colocar as imagens no mesmo nível de concursado.html
 
 Sub diretório #Campanha/enviar> form.html, index.html.
 Sub-diretorios #Campanha/enviar/DB>*, #Campanha/enviar/estilos>*, #Campanha/enviar/java>*, #Campanha/enviar/php>*,  #Campanha/enviar/TipeScript>*
 Recomendo colocar as imagens no mesmo nível de #enviar/form.html
+Nota ! As imagens são proprietárias e no campo de texto "CONCURSADO XXX" deve exibir os dados do concursado para o envido do formulário.
 Estrutura de desenvlvimento .Net
