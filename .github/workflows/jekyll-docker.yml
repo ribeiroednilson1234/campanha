@@ -185,6 +185,7 @@ jobs:
         username: oauth2accesstoken
         password: ${{ steps.auth.outputs.access_token }}
 
+run: 
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
@@ -220,7 +221,8 @@ jobs:
 env:
           oracle-region: Brazil
 
-          <?xml version="1.0" encoding="utf-8"?>
+run:
+<?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
         <clear />
@@ -256,6 +258,7 @@ jobs:
         env:
           AWS_REGION: Brazil
 
+run:
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
@@ -353,6 +356,7 @@ jobs:
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
 
+run:
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
@@ -423,6 +427,7 @@ jobs:
           docker tag $IMAGE_CAMPANHA $IMAGE_ID:$VERSION-1.0
           docker push $IMAGE_ID:$VERSION-1.0
 
+run:
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
@@ -502,7 +507,8 @@ jobs:
           subject-name: ghcr.io/${{ github.repository }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
-          
+
+run:          
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
