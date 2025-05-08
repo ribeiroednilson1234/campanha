@@ -183,15 +183,15 @@
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
       file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
+      same "printed page" as the copyright notice for
       identification within third-party archives.
   
        Copyright [2025] [name of copyright Ednilson Alves]
-.ci [ name ]{    
-#!bin/bash
+CI [.configNameUser([campanha]);
+{    
+#!/bin/bash
 name: ci
-
-on:
+on: run
   push:
     branches: main
 
@@ -201,7 +201,7 @@ jobs:
     steps:
 push:
     branches: main
-    ##Acesse o GitHub
+  ####Acesse o GitHub
   login:
   runs-on: GitHub
   with:
