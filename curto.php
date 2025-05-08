@@ -1,7 +1,7 @@
 <?php
-@mssql_connect($dbhost,$user,$password) or die
+@mssql_connect($estudo,$user,$password) or die
 (“Não foi possível a conexão com o servidor!”);
-@mssql_select_db(“$db“) or die
+@mssql_select_estudo(“$estudo“) or die
 (“Não foi possível selecionar o banco de dados!”);
 
 $instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF, FROM $CONTRATADO ORDER BY ASC;
@@ -30,7 +30,7 @@ $wy=$_post["Erro"];
 
 if{	Nome=string; echo "<p><b>Nome cadastrado: [$Nome];</b></p>"}
 if{	Idade=int; echo "<br><p><b>Idade cadastrada: [$Idade];</b></p>"}
-if{	Identidade; echo "<br><p><b>Identidade Cadastrada: [$Identidade]"</b></p>}
+if{	Identidade=int; echo "<br><p><b>Identidade Cadastrada: [$Identidade]"</b></p>}
 if{	CPF=int; echo "<br><p><b>CPF cadastrado: [$CPF];</b></p>"}
 
 else;{
