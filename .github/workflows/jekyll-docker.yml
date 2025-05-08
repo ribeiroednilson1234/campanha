@@ -58,7 +58,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -91,7 +91,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -126,7 +126,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -195,7 +195,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -232,7 +232,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -270,7 +270,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Pricipalbeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Pricipalbeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -369,7 +369,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -441,7 +441,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
@@ -523,7 +523,7 @@ env: Brazil
 <configuration>
     <packageSources>
         <clear />
-        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/index.json" />
+        <add key="github" value="https://nuget.pkg.github.com/Principalribeiroednilson1234-main/campanha/index.json" />
     </packageSources>
     <packageSourceCredentials>
         <github>
