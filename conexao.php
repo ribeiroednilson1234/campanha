@@ -1,14 +1,14 @@
-﻿<?php
+<?php
 funcao mssl_connect(estudo.db);
 //dados do banco
-$dbhost="Documentos/campanha/enviar/DB/estudo.db";
-$db="estudo.db";
-$user="concursado";
-$password="estudo";
+$dbhost="Documentos/campanha/enviar/DB/Estudo.db";
+$db="Estudo.db";
+$user="campanha";
+$password="concursado";
 
-@mssql_connect($dbhost,$user,$password) or die
+@mssql_connect($Estudo,$Campanha,$concursado) or die
 (“Não foi possível a conexão com o servidor!”);
-@mssql_select_db(“$db“) or die
+@mssql_select_db(“$Estudo“) or die
 (“Não foi possível selecionar o banco de dados!”);
 
 $instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF, FROM $CADASTRO ORDER BY ASC;
