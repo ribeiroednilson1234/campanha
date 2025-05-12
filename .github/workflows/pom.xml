@@ -21,7 +21,7 @@
     </dependencies>
 
 </project>
-
+process.roles:
 nó.id
 O ID do nó associado às funções que este processo desempenha quando process.roles não está vazio. Esta é uma configuração necessária ao executar no modo KRaft.
 
