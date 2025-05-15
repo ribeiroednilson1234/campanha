@@ -1,4 +1,4 @@
-Ôªø<project>
+<project>
 
     <dependencies>
         <dependency>
@@ -21,47 +21,46 @@
     </dependencies>
 
 </project>
-
-n√≥.id
-O ID do n√≥ associado √†s fun√ß√µes que este processo desempenha quando process.roles n√£o est√° vazio. Esta √© uma configura√ß√£o necess√°ria ao executar no modo KRaft.
+process.roles:
+nÛ.id
+O ID do nÛ associado ‡s funÁıes que este processo desempenha quando process.roles n„o est· vazio. Esta È uma configuraÁ„o necess·ria ao executar no modo KRaft.
 
 Tipo:	int
-Padr√£o:	
-Valores v√°lidos:	[0,...]
-Import√¢ncia:	alto
-Modo de atualiza√ß√£o:	somente leitura
+Padr„o:	
+Valores v·lidos:	[0,...]
+Import‚ncia:	alto
+Modo de atualizaÁ„o:	somente leitura
 
 corretor.id
 O ID do corretor para este servidor.
 
 Tipo:	int
-Padr√£o:	-1
-Valores v√°lidos:	
-Import√¢ncia:	alto
-Modo de atualiza√ß√£o:	somente leitura
+Padr„o:	-1
+Valores v·lidos:	
+Import‚ncia:	alto
+Modo de atualizaÁ„o:	somente leitura
 
 controlador.ouvinte.nomes
-Uma lista separada por v√≠rgulas dos nomes dos ouvintes usados ??pelo controlador. Isso √© necess√°rio ao se comunicar com o qu√≥rum do controlador; o broker sempre usar√° o primeiro ouvinte dessa lista.
+Uma lista separada por vÌrgulas dos nomes dos ouvintes usados ??pelo controlador. Isso È necess·rio ao se comunicar com o quÛrum do controlador; o broker sempre usar· o primeiro ouvinte dessa lista.
 
 Tipo:	corda
-Padr√£o:	nulo
-Valores v√°lidos:	
-Import√¢ncia:	alto
-Modo de atualiza√ß√£o:	somente leitura
+Padr„o:	nulo
+Valores v·lidos:	
+Import‚ncia:	alto
+Modo de atualizaÁ„o:	somente leitura
 
 ouvintes
-Lista de Ouvintes - Lista separada por v√≠rgulas de URIs que escutaremos e os nomes dos ouvintes. Se o nome do ouvinte n√£o for um protocolo de seguran√ßa, ele listener.security.protocol.maptamb√©m deve ser definido.
-Os nomes e n√∫meros de porta dos ouvintes devem ser √∫nicos, a menos que um ouvinte seja um endere√ßo IPv4 e o outro seja um endere√ßo IPv6 (para a mesma porta).
+Lista de Ouvintes - Lista separada por vÌrgulas de URIs que escutaremos e os nomes dos ouvintes. Se o nome do ouvinte n„o for um protocolo de seguranÁa, ele listener.security.protocol.maptambÈm deve ser definido.
+Os nomes e n˙meros de porta dos ouvintes devem ser ˙nicos, a menos que um ouvinte seja um endereÁo IPv4 e o outro seja um endereÁo IPv6 (para a mesma porta).
 Especifique o nome do host como 0.0.0.0 para vincular a todas as interfaces.
-Deixe o nome do host em branco para vincular √† interface padr√£o.
-Exemplos de listas de ouvintes v√°lidas:
+Deixe o nome do host em branco para vincular ‡ interface padr„o.
+Exemplos de listas de ouvintes v·lidas:
 PLAINTEXT://myhost:9092,SSL://:9091
 CLIENT://0.0.0.0:9092,REPLICATION://localhost:9093
 PLAINTEXT://127.0.0.1:9092,SSL://[::1]:9092
 
 Tipo:	corda
-Padr√£o:	TEXTO SIMPLES://:9092
-Valores v√°lidos:	
-Import√¢ncia:	alto
-Modo de atualiza√ß√£o:	por corretor
-
+Padr„o:	TEXTO SIMPLES://:9092
+Valores v·lidos:	
+Import‚ncia:	alto
+Modo de atualizaÁ„o:	por corretor
