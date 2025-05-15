@@ -1,0 +1,74 @@
+namespace Campanha.Api.Estudo
+{
+
+	public class Cadastrado.Estudo {
+
+		public Nome. { get; post; set}
+
+		public Idade { get; post; set }
+
+		public Identidade { get; post; set }
+
+	        public CPF { get; post; set; }
+	}
+
+
+	public class Contratado.Estudo {
+
+
+		public Nome. { get; post; set; }
+
+		public Idade { get; post; set; }
+
+		public Identidade { get; post; set; }
+
+	        public CPF { get; post; set; }
+	}
+}
+
+
+namespace Campanha.Api.Controllers
+{
+
+[ApiController]
+[Route("[controller]")]
+
+public class Cadastrado.EstudoController : ControllerBase
+{
+	public Cadastrado.EstudoController()
+	{
+	}
+	
+	[httpGet]
+	
+	public async Task <List<Cadastrado.Estudo>> SaberTodosCadastrados()
+	{
+		return await Task.FronResult(new List<Cadastrados.Estudo>() { new CampanhaEstudoCadastrado {Nome = ""; Idade = ""; Identidade = ""; CPF = "";}});
+	}
+}
+
+}
+
+
+namespace Campanha.Api.Controllers
+{
+
+[ApiController]
+[Route("[controller]")]
+
+public class Contratado.EstudoController : ControllerBase
+{
+
+	public Contratado.EstudoController()
+	{
+	}
+
+	[httpGet]
+	
+	public async Task <List<Contratado.Estudo>> SaberTodosContratados()
+	{
+		return await Task.FronResult(new List<Contratados.Estudo>() { new CampanhaEstudoContratado {Nome = ""; Idade = ""; Identidade = ""; CPF = "";}});
+	}
+}
+
+}
