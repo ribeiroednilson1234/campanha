@@ -1,5 +1,4 @@
 CREATE DATABASE CampanhaEstudoContratado; GO
-if Observação{
 CREATE TABLE Observação( PRIMARY KEY id_CPF int(11)[not null],
 Histórico_char(500) [not null],
 Comentário_char(300) [not null],
