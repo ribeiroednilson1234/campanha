@@ -1,13 +1,15 @@
+protected WebPageBase();
+
 namespace Campanha.Api.Estudo
 {
 
 	public class Cadastrado.Estudo {
 
-		public Nome. { get; post; set; }
+		public Nome. { get; post; set}
 
-		public Idade { get; post; set; }
+		public Idade { get; post; set }
 
-		public Identidade { get; post; set; }
+		public Identidade { get; post; set }
 
 	        public CPF { get; post; set; }
 	}
@@ -26,6 +28,16 @@ namespace Campanha.Api.Estudo
 	}
 }
 
+public abstract class Controller : 
+System.Web.Mvc.ControllerBase, 
+IDisposable, 
+System.Web.Mvc.Async.IAsyncController, 
+System.Web.Mvc.Async.IAsyncManagerContainer, 
+System.Web.Mvc.Filters.IAuthenticationFilter, 
+System.Web.Mvc.IActionFilter, 
+System.Web.Mvc.IAuthorizationFilter, 
+System.Web.Mvc.IExceptionFilter, 
+System.Web.Mvc.IResultFilter
 
 namespace Campanha.Api.Controllers
 {
@@ -49,6 +61,16 @@ public class Cadastrado.EstudoController : ControllerBase
 
 }
 
+public abstract class Controller : 
+System.Web.Mvc.ControllerBase, 
+IDisposable, 
+System.Web.Mvc.Async.IAsyncController, 
+System.Web.Mvc.Async.IAsyncManagerContainer, 
+System.Web.Mvc.Filters.IAuthenticationFilter, 
+System.Web.Mvc.IActionFilter, 
+System.Web.Mvc.IAuthorizationFilter, 
+System.Web.Mvc.IExceptionFilter, 
+System.Web.Mvc.IResultFilter
 
 namespace Campanha.Api.Controllers
 {
