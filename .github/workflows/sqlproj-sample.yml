@@ -1,0 +1,53 @@
+name: sqlproj-sample
+
+on:
+  push:
+    branches: [ "main" ]
+
+### Salvar no workflow dot net "sqlproj-sample.yml"
+###Antes de confirmar as alterações, adicione um segredo ao repositório que contém a cadeia de conexão com o banco de dados de destino. No repositório no GitHub.com, navegue até Configurações, depois, até Segredos. Selecione Novo segredo do repositório e adicione um segredo chamado SQL_CONNECTION_STRING com o valor da cadeia de conexão ao banco de dados de destino
+- name: Deploy
+  uses: azure/sql-action@v2
+  with:
+    connection-string: ${{ secrets.SQL_CONNECTION_STRING }}
+    action: 'publish'
+    path: 'bin/Debug/MyDatabaseProject.dacpac'
+###################################################################
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Build
+      run: dotnet build MyDatabaseProject.sqlproj
+<project>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
+
+<project>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
