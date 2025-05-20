@@ -1,3 +1,4 @@
+on: ssh-keygen
 name: sqlproj-sample
 
 on:
@@ -9,7 +10,7 @@ on:
 - name: Deploy
   uses: azure/sql-action@v2
   with:
-    connection-string: ${{ secrets.SQL_CONNECTION_STRING }}
+    connection-string: ${{ secrets.14021967EAR@CAMPANHA }}
     action: 'publish'
     path: 'bin/Debug/MyDatabaseProject.dacpac'
 ###################################################################
