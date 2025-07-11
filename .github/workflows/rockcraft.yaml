@@ -1,3 +1,7 @@
+steps:
+  - uses: actions/checkout@v3
+  - uses: canonical/craft-actions/rockcraft-pack@main
+
 name: my-node-app
 base: ubuntu@22.04
 version: "1.0"
