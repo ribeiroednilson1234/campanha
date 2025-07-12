@@ -86,4 +86,5 @@ parts:
       # - https://github.com/amazonlinux/amazon-linux-2023/issues/856
       # For now we need to disable libuv's use of io_uring; this should be able to
       # be reverted in a few months (as of April 2025).
-      - UV_USE_IO_URING: "0"
+      # Conforme o exposto acima ativei u UV IO.
+      - UV_USE_IO_URING: "1"
