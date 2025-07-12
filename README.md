@@ -11,3 +11,6 @@ Sub-diretorios #Campanha/enviar/DB>*.sql, #Campanha/enviar/estilos>*.css, #Campa
 Recomendo colocar as imagens para o concursado a ser contratado no mesmo nível de #enviar/form.html
 Nota ! As imagens são proprietárias e no campo de texto "CONCURSADO XXX" deve exibir os dados do concursado para o envido do formulário.
 Estrutura de desenvlvimento .Net
+
+NOTA !
+Em função da atualização do Sistema operacional mantido pela Canonical, Ubuntu-22.04-LTS pode ser possível o uso do Node.js ou o Primavera com arquivo de configuração #rockcraft.yaml#, dúvidas sanadas em url[https://documentation.ubuntu.com/rockcraft/en/latest/tutorial/node-app/]
