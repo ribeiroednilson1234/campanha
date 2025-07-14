@@ -1,8 +1,5 @@
-###Comece em uma pasta vazia e crie um src/subdiretório. Dentro
-###dele, adicione dois arquivos:
-
-###A primeira é a package.jsonlistagem de dependências, com o ###seguinte conteúdo:
-
+{"_comment":"Comece em uma pasta vazia e crie um src/subdiretório. Dentro dele, adicione dois arquivos: A primeira é a package.jsonlistagem de dependências, com o seguinte conteúdo:"
+}
 {
   "name": "node_web_app",
   "version": "1.0.0",
