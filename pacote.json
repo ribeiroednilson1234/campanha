@@ -1,0 +1,18 @@
+###Comece em uma pasta vazia e crie um src/subdiretório. Dentro
+###dele, adicione dois arquivos:
+
+###A primeira é a package.jsonlistagem de dependências, com o ###seguinte conteúdo:
+
+{
+  "name": "node_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on a rock",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
