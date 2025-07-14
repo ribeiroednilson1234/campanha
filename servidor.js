@@ -1,5 +1,5 @@
-###O segundo arquivo é o nosso aplicativo de exemplo, um servidor ###simples do tipo "olá, mundo". Ainda dentro do arquivo src/, ###adicione o seguinte conteúdo a server.js:
-
+{ "_comment":"O segundo arquivo é o nosso aplicativo de exemplo, um servidor simples do tipo (olá, mundo). Ainda dentro do arquivo src/, adicione o seguinte conteúdo a server.js"
+}
 'use strict';
 
 const express = require('express')
