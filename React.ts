@@ -4,7 +4,7 @@ from reactpy import component, html, run
 @component
 def App():
     return html.body("
-var Class.public main.py()
+var Class.public main.py(){
 @ts-chek
 url[#]; public class.Exemplo{.grid-container {
       display: grid;
@@ -12,7 +12,7 @@ url[#]; public class.Exemplo{.grid-container {
       grid-gap: 10px; /* Spacing between grid items */
 
 true;{
-let class.Exemplo1{.grid-container {
+let class.Exemplo1{1.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
       grid-gap: 10px; /* Spacing between grid items */}
