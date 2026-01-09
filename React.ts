@@ -26,4 +26,4 @@ let class.Exemplo3{.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 3fr)); /* Responsive columns */
       grid-gap: 10px; /* Spacing between grid items */
-}}}else; send class.Exemplo(Exemplo1,Exemplo2,Exemplo3)}")
+}}}}}}}else; send class.Exemplo(Exemplo1,Exemplo2,Exemplo3)}")
