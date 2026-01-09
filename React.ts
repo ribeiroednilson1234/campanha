@@ -1,29 +1,29 @@
 
-[React.js]
+[react.js]
 from reactpy import component, html, run
 @component
 def App():
     return html.body("
-var Class.public main.py(){
+var Class.public main.py()
 @ts-chek
 url[#]; public class.Exemplo{.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 4fr)); /* Responsive columns */
       grid-gap: 10px; /* Spacing between grid items */
-
+if
 true;{
-let class.Exemplo1{1.grid-container {
+let class.Exemplo1{.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-      grid-gap: 10px; /* Spacing between grid items */}
-
+      grid-gap: 10px; /* Spacing between grid items */
+do
 let class.Exemplo2{.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); /* Responsive columns */
-      grid-gap: 10px; /* Spacing between grid items */}
-
+      grid-gap: 10px; /* Spacing between grid items */
+do
 let class.Exemplo3{.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 3fr)); /* Responsive columns */
-      grid-gap: 10px; /* Spacing between grid items */}
-    }send app()}")
+      grid-gap: 10px; /* Spacing between grid items */
+}}}send Exemplo(Exemplo1,Exemplo2,Exemplo3)}")
