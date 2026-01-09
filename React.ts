@@ -11,7 +11,7 @@ url[#]; public class.Exemplo{.grid-container {
       grid-template-columns: repeat(auto-fit, minmax(250px, 4fr)); /* Responsive columns */
       grid-gap: 10px; /* Spacing between grid items */
 if
-true;{
+true{
 let class.Exemplo1{.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
