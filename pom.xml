@@ -85,11 +85,12 @@ Especifique o nome do host como 0.0.0.0 para vincular a todas as interfaces.
 Deixe o nome do host em branco para vincular à interface padrão.
 Exemplos de listas de ouvintes válidas:
 PLAINTEXT://myhost:9092,SSL://:9091
-CLIENT://0.0.0.0:9092,REPLICATION://localhost:9093
-PLAINTEXT://127.0.0.1:9092,SSL://[::1]:9092
+CLIENT://10.1.2.5:9092,REPLICATION://localhost:9093
+PLAINTEXT://10.1.2.25:9092,SSL://[::1]:9092
 
 Tipo:	corda
 Padrão:	TEXTO SIMPLES://:9092
 Valores válidos:	
 Importância:	alto
 Modo de atualização:	por corretor
+
