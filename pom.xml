@@ -1,18 +1,24 @@
 <project>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.eclipse.jkube</groupId>
+            <artifactId>kubernetes-maven-plugin</artifactId>
+            <version>1.18.2</version> <!-- Verifique a versão mais recente -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>resource</goal>
+                        <goal>build</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>4.0.0</version>
-        </dependency>
-    </dependencies>
 
-</project>
-
-<project>
-
-    <dependencies>
+ <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
@@ -93,4 +99,5 @@ Padrão:	TEXTO SIMPLES://:9092
 Valores válidos:	
 Importância:	alto
 Modo de atualização:	por corretor
+
 
