@@ -1,3 +1,74 @@
+GitHub Packages/Trabalhar com um registro do GitHub Packages/Registro do Apache Maven
+Trabalhando com o repositório do Apache Maven
+Você pode configurar o Apache Maven para publicar pacotes no GitHub Packages e usar pacotes armazenados no GitHub Packages como dependências em um projeto Java.
+
+Neste artigo
+Autenticar-se no GitHub Packages
+Observação
+
+O GitHub Packages dá suporte apenas à autenticação que usa um personal access token (classic). Para saber mais, confira Gerenciar seus tokens de acesso pessoal.
+
+Você precisa de um token de acesso para publicar, instalar e excluir pacotes privados, públicos e internos.
+
+Você pode usar um personal access token (classic) para se autenticar no GitHub Packages ou na API do GitHub. Ao criar um personal access token (classic), você pode atribuir diferentes escopos de token, dependendo da sua necessidade. Para obter mais informações sobre escopos relacionados a pacotes para personal access token (classic), confira Sobre permissões para o GitHub Packages.
+
+Para efetuar a autenticação em um registro do GitHub Packages dentro de um fluxo de trabalho de GitHub Actions, você pode utilizar:
+
+GITHUB_TOKEN para publicar pacotes associados ao repositório do fluxo de trabalho.
+Um personal access token (classic) com pelo menos escopo read:packages para instalar pacotes associados a outros repositórios privados (GITHUB_TOKEN pode ser usado se o repositório receber acesso de leitura ao pacote. Confira, Configurando o controle de acesso e visibilidade de um pacote).
+Para obter mais informações sobre o GITHUB_TOKEN usado em fluxos de trabalho do GitHub Actions, confira Usar GITHUB_TOKEN para autenticação em fluxos de trabalho.
+
+Autenticar com um personal access token
+Você precisa usar um personal access token (classic) com os escopos apropriados para publicar e instalar pacotes no GitHub Packages. Para saber mais, confira Introdução ao GitHub Packages.
+
+Você pode autenticar para GitHub Packages com Apache Maven, editando seu arquivo ~/.m2/settings.xml para incluir seu personal access token (classic). Crie um novo arquivo ~/.m2/settings.xml se um não existir.
+
+Na tag servers, adicione uma tag filho server com uma id, substituindo USERNAME pelo nome de usuário do GitHub e TOKEN pelo seu personal access token.
+
+Na tag repositories, configure um repositório mapeando a id do repositório para a id adicionada à tag server que contém suas credenciais. Substitua OWNER pelo nome da conta pessoal ou organização proprietária do repositório. Como não é permitido usar letras maiúsculas, é preciso usar letras minúsculas no nome do proprietário do repositório, mesmo que o nome do usuário ou da organização no GitHub contenha letras maiúsculas.
+
+Caso deseje interagir com vários repositórios, adicione cada repositório para separar os filhos do repository na tag repositories, mapeando a id de cada um para as credenciais contidas na marca servers.
+
+O GitHub Packages dá suporte às versões de SNAPSHOT do Apache Maven. Para usar o repositório do GitHub Packages para baixar artefatos SNAPSHOT, habilite SNAPSHOTS no POM do projeto de consumo ou no arquivo ~/.m2/settings.xml.
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/RIBEIROEDNILSON@1234/CAMPANHA</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <name>CAMPANHA</name>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>github</id>
+      <username>ribeiroednilson1234</username>
+      <password>GitHub2@2025</password>
+    </server>
+  </servers>
+</settings>
+
 <project>
     <build>
     <plugins>
