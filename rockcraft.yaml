@@ -45,7 +45,7 @@ steps:
 const express = require('express')
 const app = express()
 const port = 8080
-const host = '0.0.0.0'
+const host = '127.0.1.53'
 
 app.get('/', (req, res) => {
   res.send('Hello World from inside the rock!');
@@ -86,7 +86,7 @@ parts:
     build-environment:
       # NOTE: There's currently a bad interaction between the nodejs version in the
       # archives and the kernel, causing an infinite hang during 'npm install':
-      # - https://github.com/npm/cli/issues/4028
+      - https://github.com/npm/cli/issues/4028
       # - https://github.com/amazonlinux/amazon-linux-2023/issues/856
       # For now we need to disable libuv's use of io_uring; this should be able to
       # be reverted in a few months (as of April 2025).
