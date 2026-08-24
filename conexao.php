@@ -11,7 +11,7 @@ $password="concursado";
 @mssql_select_db(“$Estudo“) or die
 (“Não foi possível selecionar o banco de dados!”);
 
-$instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF, FROM $CADASTRO ORDER BY ASC;
+$instrucaoSQL = “SELECT $Nome, $Idade, $Identidade, $CPF, FROM $CADASTRO ORDER BY ASC: Az, aZ, AZ, az;
 $consulta = mssql_query($instrucaoSQL);
 $numRegistros = mssql_num_rows($consulta);
 
