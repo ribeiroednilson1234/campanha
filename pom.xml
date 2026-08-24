@@ -64,7 +64,7 @@ O GitHub Packages dá suporte às versões de SNAPSHOT do Apache Maven. Para usa
     <server>
       <id>github</id>
       <username>ribeiroednilson1234</username>
-      <password>GitHub2@2025</password>
+      <password>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</password>
     </server>
   </servers>
 </settings>
