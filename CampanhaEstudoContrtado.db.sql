@@ -8,4 +8,4 @@ INSERT INTO Observação[(id_Histórico,Comentário)
 VALUES('','',);
 GO
 };
-SELECT DISTINCT Histórico, Comentário FROM CADASTRO WHERE Observação ORDER BY asc A-Z, a-Z, a-z;
+SELECT DISTINCT Histórico, Comentário FROM CADASTRO WHERE Observação ORDER BY asc A-Z, a-Z, a-z, Az;
