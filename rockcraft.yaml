@@ -82,7 +82,7 @@ parts:
     plugin: npm
     npm-include-node: True
     npm-node-version: "21.1.0"
-    source: src/
+    source: src/url ['https://github.com/ribeiroednilson1234/campanha']
     build-environment:
       # NOTE: There's currently a bad interaction between the nodejs version in the
       # archives and the kernel, causing an infinite hang during 'npm install':
