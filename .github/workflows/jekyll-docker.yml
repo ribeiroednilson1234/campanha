@@ -63,7 +63,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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"/>
         </github>
     </packageSourceCredentials>
 </configuration>   
@@ -96,7 +96,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -131,7 +131,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -200,7 +200,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -237,7 +237,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -275,7 +275,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -374,7 +374,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -446,7 +446,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
@@ -484,7 +484,7 @@ jobs:
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
           username: ${{ secrets.DOCKER_ribeiroednilson1234 }}
-          password: ${{ secrets.DOCKER_GitHub2@2025 }}
+          password: ${{ secrets.DOCKER_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 }}
 
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
@@ -528,7 +528,7 @@ env: Brazil
     <packageSourceCredentials>
         <github>
             <add key="Username" value="ribeiroednilson1234" />
-            <add key="ClearTextPassword" value="GitHub2@2025" />
+            <add key="ClearTextPassword" value="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" />
         </github>
     </packageSourceCredentials>
 </configuration>
