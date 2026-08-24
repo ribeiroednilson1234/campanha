@@ -31,4 +31,4 @@ Idade_int(3) [not null],
 CPF_int(11) [not null],
 );
 GO
-SELECT DISTINCT Nome, Identidade, CPF FROM CADASTRO WHERE ESTUDO ORDER BY asc A-Z, a-Z, a-z;
+SELECT DISTINCT Nome, Identidade, CPF FROM CADASTRO WHERE ESTUDO ORDER BY asc A-Z, a-Z, a-z, Az;
