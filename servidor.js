@@ -5,7 +5,7 @@
 const express = require('express')
 const app = express()
 const port = 8080
-const host = '0.0.0.0'
+const host = '127.0.1.53'
 
 app.get('/', (req, res) => {
   res.send('Hello World from inside the rock!');
