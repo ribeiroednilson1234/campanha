@@ -1,13 +1,13 @@
 # These are supported funding model platforms
 github: [ribeiroednilson1234-main]
-patreon: ribeiroednilson1234/
+patreon: ['https://www.rnp.br/']
 open_collective: ribeiroednilson1234/
 ko_fi: url ['https://www.gnu.org/', 'https://www.ibm.com/br-pt', 'https://www.rnp.br/']
 tidelift: platform-name/Campanha e.g., npm/babel
 community_bridge: Campanha Política2024/.git e.g., cloud-foundry
 liberapay: ribeiroednilson1234/
 issuehunt: ribeiroednilson1234/
-lfx_crowdfunding: Campanha/.git e.g., cloud-foundry
+lfx_crowdfunding: Campanha/.git e.g., cloud-foundry url['https://rnp.br/']
 polar: ribeiroednilson1234/
 buy_me_a_coffee: ribeiroednilson1234-main/, url['https://sitesgoogle.com/view/ednilson-/página-inicial']
 custom: Replace with up to 4 custom sponsorship URLs e.g., ['https://www.gnu.org/', 'https://www.ibm.com/br-pt', 'https://www.rnp.br/']
